@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  		<meta charset="UTF-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  		<title>Home</title>
+  		<link rel="stylesheet" type="text/css" href="css\style.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="topnav" id="navbar">
+  				<a class="active" href="#home">Home</a>
+  				<a href="facilities.html">Facilities</a>
+  				<a href="staff.html">Staff</a>
+  				<a href="contact.html">Contact</a>
+			</div>
+			<div class="content">
+			<div class="box-image">
+				<img src="images\gym_home_image.jpg" alt="Home Page Image" width="100%">
+			</div>
+			<div class="box-text">
+				<h3>Jurong West (Nanyang)</h4>
+				<h6>Nanyang Community Club Building 60 Jurong West Street 91, #01-08</h6>
+				<h6>Jurong West, South West</h6>
+				<h6>+65 9475 5480</h6>
+				<h6>Open 24/7 to Members</h6>
+			</div>
+			<div class="box-sub-header">
+				<h1>Location</h1>
+			</div>
+			<div class="box-map">
+				<div class="mapouter">
+					<div class="gmap_canvas">
+						<iframe id="gmap_canvas" src="https://maps.google.com/maps?q=Nanyang%20Community%20Club,%2060%20Jurong%20West%20Street%2091,%20Singapore%20649040&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+						</iframe>
+					</div>
+				</div>
+			</div>
+			<div class="box-sub-header">
+				<h1>Walkthrough</h1>
+			</div>
+			<div class="box-map">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/S3XgnuATeK8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+				</iframe>
+			</div>
+			<div class="box-sub-header">
+				<h1>Promotion</h1>
+			</div>
+			<div class="box-promotion">
+				<div class="promotions" id="promotions-left">
+					<p class="promotion-title">Refer a Friend and Get 1 Month Free</p>
+					<p class="promotion-text">Members, for each friend or family member who joins, you'll get a free month of membership. There's no limit, refer 12 friends and you could get a year free!</p>
+				</div>
+				<div class="promotions" id="promotions-center">
+					<p class="promotion-title">Heros Campaign</p>
+					<p class="promotion-text">We honor our men and women in uniform for their courage and sacrifices. Dedicated for SingHealth,SPS,SAF,NSF,SPF,SCDF,LoH and healthcare workers. 20% off monthly rates and waived of joining fee!</p>
+				</div>
+				<div class="promotions" id="promotions-right">
+					<p class="promotion-title">Silver Generations and Students!</p>
+					<p class="promotion-text">If you are 55 years and above or students, just flash your ID or student pass. You will enjoy 10% discount on your monthly membership and a waive of joining fee!</p>
+				</div>
+			</div>
+			</div>
+		</div>
+	<script>
+		window.onscroll = function() {myFunction()};
+
+		var navbar = document.getElementById("navbar");
+		var sticky = navbar.offsetTop;
+
+		function myFunction() {
+  			if (window.pageYOffset >= sticky) {
+    				navbar.classList.add("sticky")
+  			} else {
+    				navbar.classList.remove("sticky");
+  			}
+		}
+	</script>
+	</body>
+</html>
